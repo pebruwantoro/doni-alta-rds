@@ -24,4 +24,4 @@ jobs:
           docker rm  donpebru/trialrds:latest
           cd program
           docker build -t donpebru/trialrds:latest .
-          docker run -d -e "HTTP_PORT=:80" -e "CONNECTION_STRING=root:02021996Doni*@tcp(18.142.49.198:3306)/alta_db?charset=utf8mb4&parseTime=True&loc=Local" -p 80:80 --name cobards donpebru/cobards:latest
+          docker run -d -e "HTTP_PORT=:80" -e "CONNECTION_STRING=root:02021996Doni*@tcp(18.142.49.198:3306)/alta_db?charset=utf8mb4&parseTime=True&loc=Local" -p 80:80 --name cekrds donpebru/trialrds:latest
